@@ -146,6 +146,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // 关闭前停止滚动处理
     func applicationWillTerminate(_ aNotification: Notification) {
         guard AppRuntime.shouldRunAppStartupSideEffects else { return }
+        TrackpadTapManager.shared.setEnabled(false)
         LogiCenter.shared.stop()
         ScrollCore.shared.disable()
         ButtonCore.shared.disable()
@@ -165,6 +166,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 ScrollCore.shared.enable()
                 ButtonCore.shared.enable()
                 LogiCenter.shared.start()
+                TrackpadTapManager.shared.resume()
             }
         } else {
             if Utils.isHadAccessibilityPermissions() {
@@ -172,6 +174,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 ScrollCore.shared.enable()
                 ButtonCore.shared.enable()
                 LogiCenter.shared.start()
+                TrackpadTapManager.shared.resume()
             } else {
                 // 如果应用不在辅助权限列表内, 则弹出欢迎窗口
                 WindowManager.shared.showWindow(withIdentifier: WINDOW_IDENTIFIER.introductionWindowController, withTitle: "")
@@ -194,6 +197,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         startWithAccessibilityPermissionsChecker(nil)
     }
     @objc func sessionDidResign(notification: NSNotification){
+        TrackpadTapManager.shared.suspend()
         permissionRecoveryTimer?.invalidate()
         permissionRecoveryTimer = nil
         LogiCenter.shared.stop()
@@ -202,6 +206,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     // 辅助功能权限在运行时被撤销 (可能由多个 Interceptor 同时触发, 此方法必须幂等)
     @objc func handleAccessibilityPermissionLost() {
+        TrackpadTapManager.shared.suspend()
         // 避免多个 Interceptor 同时触发导致重复处理
         guard ScrollCore.shared.isActive || ButtonCore.shared.isActive else { return }
         NSLog("Accessibility permission lost at runtime, disabling cores")

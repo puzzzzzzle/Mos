@@ -137,6 +137,18 @@ class ShortcutExecutor {
 
     // MARK: - 执行快捷键 (统一接口)
 
+    /// Trackpad taps are discrete actions and must bypass Mos key bindings/recorders.
+    @discardableResult
+    func execute(trackpadAction: TrackpadAction) -> Bool {
+        let shortcut = trackpadAction == .copy ? SystemShortcut.copy : SystemShortcut.paste
+        let events = TrackpadShortcutEvents.make(code: shortcut.code, marker: MosEventMarker.syntheticCustom)
+        guard events.count == 2 else { return false }
+        for event in events {
+            event.post(tap: .cghidEventTap)
+        }
+        return true
+    }
+
     /// 执行快捷键 (底层接口, 使用原始flags)
     /// - Parameters:
     ///   - code: 虚拟键码

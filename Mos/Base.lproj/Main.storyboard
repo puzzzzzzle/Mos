@@ -103,7 +103,7 @@
             <objects>
                 <viewController title="General" storyboardIdentifier="general" id="ITL-GD-CPd" customClass="PreferencesGeneralViewController" customModule="Mos" customModuleProvider="target" sceneMemberID="viewController">
                     <visualEffectView key="view" blendingMode="behindWindow" material="toolTip" state="followsWindowActiveState" id="LZw-qp-NWH">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="105"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="195"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <box hidden="YES" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="vPz-kM-wAq">
@@ -194,7 +194,6 @@
                             <constraint firstItem="Xzk-6e-mKA" firstAttribute="leading" secondItem="4ng-X7-dRa" secondAttribute="trailing" constant="15" id="Eea-ai-Voa"/>
                             <constraint firstItem="vPz-kM-wAq" firstAttribute="leading" secondItem="LZw-qp-NWH" secondAttribute="leading" constant="20" id="Hjc-z6-JQI"/>
                             <constraint firstItem="WWH-56-xDd" firstAttribute="trailing" secondItem="4ng-X7-dRa" secondAttribute="trailing" id="Ilv-kY-IzH"/>
-                            <constraint firstAttribute="bottom" secondItem="Gt2-mv-Ris" secondAttribute="bottom" constant="20" id="PEZ-EE-k79"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sTG-Fn-P3P" secondAttribute="trailing" constant="20" symbolic="YES" id="QCs-a8-qOl"/>
                             <constraint firstAttribute="trailing" secondItem="Gt2-mv-Ris" secondAttribute="trailing" constant="19" id="QIz-Bj-PTh"/>
                             <constraint firstItem="4ng-X7-dRa" firstAttribute="leading" secondItem="LZw-qp-NWH" secondAttribute="leading" constant="20" id="RNz-ur-say"/>
@@ -208,6 +207,7 @@
                         </constraints>
                     </visualEffectView>
                     <connections>
+                        <outlet property="hideStatusBarIconDescription" destination="Gt2-mv-Ris" id="TAP-GN-DSC"/>
                         <outlet property="hideStatusBarIconCheckBox" destination="1OP-ac-77Z" id="eAY-em-HEE"/>
                         <outlet property="launchOnLoginCheckBox" destination="Xzk-6e-mKA" id="Dx6-Zs-rVj"/>
                     </connections>

@@ -1,6 +1,291 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "trackpadTapCopyPaste" : {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trackpad Tap Copy / Paste"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopírovat / vložit klepnutím na trackpad"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieren / Einfügen per Trackpad-Tippen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αντιγραφή / επικόλληση με άγγιγμα επιφάνειας αφής"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copier / coller par toucher du trackpad"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "トラックパッドのタップでコピー／ペースト"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "트랙패드 탭으로 복사 / 붙여넣기"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копирование / вставка касанием трекпада"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คัดลอก / วางด้วยการแตะแทร็คแพด"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İzleme dörtgenine dokunarak kopyala / yapıştır"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Копіювання / вставлення дотиком до трекпеда"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "触控板轻点复制／粘贴"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "觸控式軌跡板點一下拷貝／貼上"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "觸控式軌跡板點一下複製／貼上"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "觸控式軌跡板點一下拷貝／貼上"
+          }
+        }
+      }
+    },
+    "trackpadTapCopyPasteHelp" : {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Three-finger tap: Copy. Four-finger tap: Paste. Turns off when Mos quits."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klepnutí třemi prsty: kopírovat. Čtyřmi prsty: vložit. Po ukončení Mos se vypne."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tippen mit drei Fingern: Kopieren. Mit vier Fingern: Einfügen. Wird beim Beenden von Mos ausgeschaltet."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Άγγιγμα με τρία δάχτυλα: αντιγραφή. Με τέσσερα: επικόλληση. Απενεργοποιείται όταν κλείνει το Mos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toucher avec trois doigts : copier. Avec quatre doigts : coller. Désactivé à la fermeture de Mos."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3本指のタップ：コピー。4本指のタップ：ペースト。Mosを終了するとオフになります。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "세 손가락 탭: 복사. 네 손가락 탭: 붙여넣기. Mos 종료 시 꺼집니다."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Касание тремя пальцами: копировать. Четырьмя: вставить. Отключается при выходе из Mos."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แตะสามนิ้ว: คัดลอก แตะสี่นิ้ว: วาง ปิดเมื่อออกจาก Mos"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Üç parmakla dokunma: Kopyala. Dört parmakla dokunma: Yapıştır. Mos kapatıldığında kapanır."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дотик трьома пальцями: копіювати. Чотирма: вставити. Вимикається після виходу з Mos."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "三指轻点：复制；四指轻点：粘贴。退出 Mos 后关闭。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "三指點一下：拷貝；四指點一下：貼上。結束 Mos 後關閉。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "三指點一下：複製；四指點一下：貼上。結束 Mos 後關閉。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "三指點一下：拷貝；四指點一下：貼上。結束 Mos 後關閉。"
+          }
+        }
+      }
+    },
+    "trackpadTapUnavailable" : {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trackpad taps could not be enabled. Check Accessibility access and the connected trackpad."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klepnutí na trackpad nelze zapnout. Zkontrolujte oprávnění zpřístupnění a připojený trackpad."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trackpad-Tippen konnte nicht aktiviert werden. Prüfe den Zugriff auf Bedienungshilfen und das angeschlossene Trackpad."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν ήταν δυνατή η ενεργοποίηση. Ελέγξτε την πρόσβαση στην Προσβασιμότητα και την επιφάνεια αφής."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d’activer les touchers. Vérifiez l’accès à Accessibilité et le trackpad connecté."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップ機能をオンにできません。アクセシビリティのアクセス権と接続中のトラックパッドを確認してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭 기능을 켤 수 없습니다. 손쉬운 사용 접근 권한과 연결된 트랙패드를 확인하세요."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не удалось включить касания. Проверьте доступ к Универсальному доступу и подключённый трекпад."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เปิดใช้การแตะไม่ได้ โปรดตรวจสอบสิทธิ์การช่วยการเข้าถึงและแทร็คแพดที่เชื่อมต่อ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokunmalar etkinleştirilemedi. Erişilebilirlik erişimini ve bağlı izleme dörtgenini kontrol edin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не вдалося ввімкнути дотики. Перевірте дозвіл Доступності та підключений трекпед."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "无法开启触控板轻点功能，请检查辅助功能权限和已连接的触控板。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法開啟點一下功能，請檢查輔助使用權限與已連接的觸控式軌跡板。"
+          }
+        },
+        "zh-Hant-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法開啟點一下功能，請檢查輔助使用權限與已連接的觸控式軌跡板。"
+          }
+        },
+        "zh-Hant-TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法開啟點一下功能，請檢查輔助使用權限與已連接的觸控式軌跡板。"
+          }
+        }
+      }
+    },
     "⚠️ Warning": {
       "comment": "Toast debug style button"
     },
